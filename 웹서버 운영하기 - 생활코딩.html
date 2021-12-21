@@ -9,7 +9,9 @@
    <script>
 !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "9038ddc5-4e83-43a7-8d9c-7bface479b05"}})
 AF('banners', 'showBanner')
-</script>
+</script>AF('banners', 'showBanner', { bannerContainerQuery: "#container-id",
+              bannerZIndex: 1000,              
+              additionalParams: { p1: "v1", p2: "v2"...}});
 </head>
 	
 <body id="topic_index" class="course view sidebar everystudy logged_out revision">
@@ -59,7 +61,10 @@ AF('banners', 'showBanner')
 <p>이 과정은<br>
 꽤 많은 지식이 필요하기 때문에<br>
 좀 어렵습니다.</p> 
-		 
+		 AF('banners', 'showBanner', { bannerContainerQuery: "#container-id",
+              bannerZIndex: 1000,              
+              additionalParams: { p1: "v1", p2: "v2"...}});
+							
 <div class="bn_area" id="donation_badge" style="display: block;">
     <div class="bn">
         <a href="https://opentutorials.org/module/1588/12591" class="bn_fund"><img src="./웹서버 운영하기 - 생활코딩_files/bn_fund.png"></a>
